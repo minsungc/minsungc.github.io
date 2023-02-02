@@ -21,3 +21,5 @@ article .header{font-size:1.4rem;font-style:italic;color:rgb(91,64,147)}
 .logo{margin:0;text-align:left}
 
 .logo a{float:left;font-size:1.8rem}
+
+@media (min-width:100px){body{width:60rem;margin:0 auto;padding:0}header{margin:0 0 3rem;padding:1.2rem 0}nav{margin:0;text-align:right}nav a{margin:0 0 0 1.2rem;display:inline}footer{text-align:right}.logo{margin:0;text-align:left}.logo a{float:left;font-size:1.8rem}}
