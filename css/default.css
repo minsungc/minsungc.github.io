@@ -1,25 +1,24 @@
-html{font-size:80%}
-
-body{margin-left: 20rem;margin-right: 20rem;;padding:0;font-size:1.6rem;color:#000;background-color:rgb(220, 220, 220)}
-
-header{border-bottom:0.2rem solid rgb(75,149,143);margin:0 0 3rem;padding:1.2rem 0}
-
-nav{margin:0;text-align:right}
-
-nav a{font-size:1.8rem;font-weight:bold;color:black;text-decoration:none;text-transform:uppercase}
-
-footer{margin-top:3rem;padding:1.2rem 0;border-top:0.2rem solid rgb(75,149,143);font-size:1.2rem;color:#555}
-
 h1{font-size:2.4rem}
 
 h2{font-size:2rem}
 
-article .header{font-size:1.4rem;font-style:italic;color:rgb(91,64,147)}
+.header{font-size:3rem;font-style:italic;color:rgb(91,64,147)}
 
-.logo a{font-weight:bold;color:#000;text-decoration:none}
+.logo {font-size:5rem; font-weight:bold;color:#000;text-decoration:none}
 
-.logo{margin:0;text-align:left}
+body {
+  margin-left: 5rem;
+  margin-right: 20rem;
+  padding: 0;
+  font-size: 2rem;
+  color: #000;
+}
 
-.logo a{float:left;font-size:1.8rem}
-
-@media (min-width:100px){body{width:60rem;margin:0 auto;padding:0}header{margin:0 0 3rem;padding:1.2rem 0}nav{margin:0;text-align:right}nav a{margin:0 0 0 1.2rem;display:inline}footer{text-align:right}.logo{margin:0;text-align:left}.logo a{float:left;font-size:1.8rem}}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 90%;
+  font-size: 1rem;
+  text-align: right;
+}
