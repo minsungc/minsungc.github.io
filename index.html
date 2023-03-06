@@ -17,17 +17,37 @@
 <html>
 
 <body>
-    <a href="./about.html">about.html</a>
+    <script>
+        let toggle = (button, text, iframeid) => {
+          let element = document.getElementById(iframeid);
+          let hidden = element.getAttribute("hidden");
+          let foot = document.getElementById("foot")
+
+          document.querySelectorAll('iframe').forEach(b=>b.setAttribute("hidden", "hidden"));
+          if (hidden) {
+             element.removeAttribute("hidden");
+             button.innerText = text;
+             foot.setAttribute("hidden", "hidden");
+          } else {
+             element.setAttribute("hidden", "hidden");
+             button.innerText = text;
+          }
+        }
+    </script>
+
+    <button onclick="toggle(this, 'about.html', 'myiframe');">about.html</button>
     <br>
-    <a href="./images/me2.jpeg">picture.jpg</a>
+    <button onclick="toggle(this, 'cv.pdf', 'cv');">cv.pdf</button>
     <br>
-    <a href="./cv.pdf">CV.pdf</a>
+    <button onclick="toggle(this, 'publication.pdf', 'pub');">publication.pdf</button>
     <br>
-    <a href="https://www.opuscula.agh.edu.pl/vol41/6/art/opuscula_math_4138.pdf">
-    Publication(singular).pdf
-    </a>
-    <div class="footer">
-        website theme suggested by <a href="https://john-ml.github.io/">John Li</a> 
-    </div>
+    <iframe id="myiframe" src="./about.html" hidden="hidden"></iframe>
+    <iframe id="cv" src="./cv.pdf" hidden="hidden"></iframe>
+    <iframe id="pub" src="https://www.opuscula.agh.edu.pl/vol41/6/art/opuscula_math_4138.pdf" hidden="hidden"></iframe>
+    
 </body>
+
+<div class="footer" id="foot">
+        website vibe designed with <a href="https://john-ml.github.io/">John Li</a>, <a href="https://olekg.pl">Olek Gierczak</a>, and <a href="https://stites.io">Sam Stites</a>.
+</div>
 </html>
