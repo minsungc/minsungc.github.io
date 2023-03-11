@@ -6,6 +6,7 @@ h2{font-size:2rem}
 
 .logo {font-size:5rem; font-weight:bold;color:#000;text-decoration:none}
 
+.image {width: 300px; height: auto; object-fit: fill;}
 body {
   margin-left: 10%;
   margin-right: 10%;
