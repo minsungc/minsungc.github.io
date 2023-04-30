@@ -1,0 +1,177 @@
+\documentclass[12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Minsung Cho} \\[7.5pt]
+\href{mailto:minsung@ccs.neu.edu}{\raisebox{-0.05\height}\ minsung@ccs.neu.edu} \ $|$ \ \href{cho.minsung.pl}{cho.minsung.pl} 
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+\textbf{Northeastern University}, Ph.D. Computer Science & \hfill 2022--Present \\
+[3pt]
+Advisor: Steven Holtzen\vspace{0.5em}\\
+\textbf{Carnegie Mellon University}, B.S. Mathematics and Philosophy (Logic track) & \hfill 2018--2022 \\ 
+[3pt]
+Thesis: \textit{Cops and Robbers in Lean} \\
+
+Advisor: Jeremy Avigad
+
+\end{tabularx}
+
+%Experience
+\section{Experience}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{NSF REU Researcher}, University of Tennessee at Chattanooga & \hfill 2021 \\[3pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[-] Classified the Krein--von Neumann extension on regular even--order quasi--differential operators
+        \item[-] Published in \textit{Opuscula Mathematica}
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Researcher in Combinatorics}, Carnegie Mellon University & \hfill 2020 \\[3pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[-] Generalized the cop-win property to 1-connected infinite graphs
+        \item[-] Research featured on 2021 CMU Mathematics newsletter
+        \item[-] Grant proposal featured by CMU Undergraduate Research for exceptional writing
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+%Pubs
+\section{Publications}
+
+\textit{The Krein-von Neumann extension of a regular even order quasi-differential operator.} 
+M. Cho, S. Hoisington, B. Udall, R. Nichols. Opuscula Mathematica. 41.6 (2021): 805-841.\footnote{In math, author order is alphabetical. All authors contributed equally.}
+
+
+%Projects
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{\texttt{daPPL}: Efficient Decision--Theoretic Probabilistic Programming} & \hfill Rust\\[3pt]
+    \multicolumn{2}{@{}X@{}}{We introduce a new language unifying knowledge compilation and semantic approaches to maximum expected utility to reason about decisions in a safe and efficient manner. To be presented at PLDI SRC 2023.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{The Software Evolution of Theorem Provers} & \hfill Jupyter Notebook, Typescript\\[3pt]
+    \multicolumn{2}{@{}X@{}}{We investigate the history of different theorem provers through a software engineering lens to visualize the development of the modern theorem proving community.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Cops and Robbers in Lean} & \hfill Lean 3\\[3pt]
+\multicolumn{2}{@{}X@{}}{We formalized the game of Cops and Robbers on a graph and associated theorems such as \textit{a complete graph is always cop-win} and \textit{every cop-win graph has a corner}.}  \\
+\end{tabularx}
+
+\section{Awards}
+
+PLMW@PLDI 2023 scholarship recipient.
+
+University and College honors (equiv. magna cum laude) from Carnegie Mellon.
+
+\section{Skills}
+
+Fluent in Korean and English.
+
+Experience in functional programming (Lean, Coq, Haskell, ML dialects), Python, Rust, LaTeX.
+
+5 semesters of TA experience in mathematics and logic, including one graduate course.
+\end{document}
