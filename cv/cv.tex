@@ -19,7 +19,7 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES
 %----------------------------------------------------------------------------------------
-\usepackage{url}
+\usepackage{url, amsmath}
 \usepackage{parskip} 	
 
 %other packages for formatting
@@ -142,18 +142,31 @@ Advisor: Jeremy Avigad
 \textit{The Krein-von Neumann extension of a regular even order quasi-differential operator.} 
 M. Cho, S. Hoisington, B. Udall, R. Nichols. Opuscula Mathematica. 41.6 (2021): 805-841.\footnote{In math, author order is alphabetical. All authors contributed equally.}
 
+\section{Invited Talks}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Scaling Decision--Theoretic Probabilistic Programming Through Factorization} & \hfill \begin{tabular}{r}
+        DRAGSTERS \\ @ PLDI 2023
+    \end{tabular}\\[3pt]
+    Joint work with Steven Holtzen. Also presented at PLDI SRC 2023.
+\end{tabularx}
 
 %Projects
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{\texttt{daPPL}: Efficient Decision--Theoretic Probabilistic Programming} & \hfill Rust\\[3pt]
-    \multicolumn{2}{@{}X@{}}{We introduce a new language unifying knowledge compilation and semantic approaches to maximum expected utility to reason about decisions in a safe and efficient manner. To be presented at PLDI SRC 2023.}  \\
+    \textbf{Generic Max-Sum Optimization Problem Solving On Semirings} & \hfill Rust\\[3pt]
+    \multicolumn{2}{@{}X@{}}{We introduce a class of semirings that admits a tractable branch-and-bound algorithm in the style of Huang and Darwiche to solve max-sum optimization problems frequently seen in probabilistic reasoning.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{The Next 700 Probabilistic Programming Languages Beyond Inference} & \hfill \\[3pt]
+    \multicolumn{2}{@{}X@{}}{We discuss, on top of a simple monadic discrete probabilistic programming language, how optimization over inference can also take on (co-)monadic shape while still maintaining tractability via Boolean compilation.}  \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{The Software Evolution of Theorem Provers} & \hfill Jupyter Notebook, Typescript\\[3pt]
-    \multicolumn{2}{@{}X@{}}{We investigate the history of different theorem provers through a software engineering lens to visualize the development of the modern theorem proving community.}  \\
+    \multicolumn{2}{@{}X@{}}{We investigate the history of different theorem provers through a software engineering lens to visualize the development of the modern theorem proving community, focusing on Isabelle, Coq, and Lean.}  \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
@@ -165,13 +178,13 @@ M. Cho, S. Hoisington, B. Udall, R. Nichols. Opuscula Mathematica. 41.6 (2021): 
 
 PLMW@PLDI 2023 scholarship recipient.
 
-University and College honors (equiv. magna cum laude) from Carnegie Mellon.
+University and College honors from Carnegie Mellon.
 
 \section{Skills}
 
 Fluent in Korean and English.
 
-Experience in functional programming (Lean, Coq, Haskell, ML dialects), Python, Rust, LaTeX.
+Experience in functional programming (Lean, Coq, Haskell, ML dialects), Python, Rust, Dafny, LaTeX.
 
-5 semesters of TA experience in mathematics and logic, including one graduate course.
+5 semesters of TA experience in mathematics and logic, including one graduate course, at CMU.
 \end{document}
