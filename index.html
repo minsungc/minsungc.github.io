@@ -1,56 +1,63 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="./css/default.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Minsung Cho's Homepage</title>
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                Index of /minsung (조민성) <br>
-            </div>
-        </header>
-    </body>
-    </html>
-<html>
-
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Minsung’s Homepage</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="css/default.css" />
+</head>
 <body>
-    <script>
-        let toggle = (button, text, iframeid) => {
-          let element = document.getElementById(iframeid);
-          let hidden = element.getAttribute("hidden");
-          let foot = document.getElementById("foot")
-
-          document.querySelectorAll('iframe').forEach(b=>b.setAttribute("hidden", "hidden"));
-          if (hidden) {
-             element.removeAttribute("hidden");
-             button.innerText = text;
-             foot.setAttribute("hidden", "hidden");
-          } else {
-             element.setAttribute("hidden", "hidden");
-             button.innerText = text;
-             foot.removeAttribute("hidden");
-          }
-        }
-    </script>
-    Click any of the "files" below!
-    <br>
-    <button onclick="toggle(this, 'about.html', 'myiframe');">about.html</button>
-    <br>
-    <button onclick="toggle(this, 'cv.pdf', 'cv');">cv.pdf</button>
-    <br>
-    <button onclick="toggle(this, 'publication.pdf', 'pub');">publication.pdf</button>
-    <br>
-    <iframe id="myiframe" src="./about.html" hidden="hidden"></iframe>
-    <iframe class = "image" id="pic" src="./images/me2.jpeg" hidden="hidden"></iframe>
-    <iframe id="cv" src="./cv/cv.pdf" hidden="hidden"></iframe>
-    <iframe id="pub" src="https://www.opuscula.agh.edu.pl/vol41/6/art/opuscula_math_4138.pdf" hidden="hidden"></iframe>
-    
+<h2 id="minsungs-homepage">Minsung’s Homepage</h2>
+<p><a href="https://cho.minsung.pl/cv/cv.pdf">CV</a> | <a href="https://github.com/minsungc">GitHub</a> | minsung AT ccs DOT neu DOT edu</p>
+<p>I’m a 2nd year PhD student at the amazing <a href="https://prl.khoury.northeastern.edu/">Programming Research Laboratory</a> at Northeastern University, working with <a href="https://www.khoury.northeastern.edu/home/sholtzen/">Steven Holtzen</a>.</p>
+<p>I received my BS from Carnegie Mellon University, where I was advised by <a href="https://www.andrew.cmu.edu/user/avigad/">Jeremy Avigad</a>.</p>
+<p>My interests are primarily in programming languages and artificial intelligence. I build bridges between knowledge compilation and probabilistic program semantics.</p>
+<p>I’m also interested in the following things, in no particular order:</p>
+<ul>
+<li>Algebraic effects</li>
+<li>Interactive theorem proving</li>
+<li>Specialty coffee</li>
+</ul>
+<p>I’m a first-generation Korean American. My Erdős number is 5. According to David Savitt’s Springer GTM personality quiz, I am Mac Lane’s <em>Categories for the Working Mathematician</em>.</p>
+<h3 id="papers">Papers</h3>
+<p>I have an old paper from undergrad from when I was at the UTC Math REU. It’s published in <em>Opuscula Mathematica</em>.</p>
+<h3 id="talks">Talks</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><!-- --></th>
+<th style="text-align: right;"><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Scaling Decision-Theoretic Probabilistic Programs Through Factorization.</strong><br>🏆 PLDI SRC First Place.</td>
+<td style="text-align: right;">SRC, DRAGSTERS @ PLDI 2023</td>
+</tr>
+</tbody>
+</table>
 </body>
-
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3NN7NFJQ0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-K3NN7NFJQ0');
+    </script>
 <div class="footer" id="foot">
-        website vibe designed with <a href="https://john-ml.github.io/">John Li</a>, <a href="https://olekg.pl">Olek Gierczak</a>, and <a href="https://stites.io">Sam Stites</a>.
+  Check out <a href="https://john-ml.github.io/">John Li</a>, <a href="https://olekg.pl">Olek Gierczak</a>, <a href="https://stites.io">Sam Stites</a>, and <a href="https://camoy.name/">Cameron Moy</a>!
 </div>
 </html>
