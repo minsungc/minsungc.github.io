@@ -17,6 +17,7 @@ I'm also interested in the following things, in no particular order:
 * Algebraic effects
 * Interactive theorem proving
 * Specialty coffee
+* Distracting my labmates with casual conversation
 
 I'm a first-generation Korean American. My Erdős number is 5. According to David Savitt's Springer GTM personality quiz, I am Mac Lane's *Categories for the Working Mathematician*.
 
@@ -27,5 +28,5 @@ I have an old paper from undergrad from when I was at the UTC Math REU. It's pub
 ### Talks
 
 | <!-- -->    | <!-- -->    |
-|:-------------|-------------:|
-| **Scaling Decision-Theoretic Probabilistic Programs Through Factorization.**<br>🏆 PLDI SRC First Place.       | SRC, DRAGSTERS @ PLDI 2023 |
+|:-------------|------:|
+| **Scaling Decision-Theoretic Probabilistic Programs Through Factorization.**<br>🏆 PLDI SRC First Place.       | SRC, DRAGSTERS<br>PLDI 2023 |
