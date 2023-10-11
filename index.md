@@ -1,5 +1,6 @@
 ---
 pagetitle: Minsung's Homepage
+footer-html: hello!
 ...
 
 ## Minsung's Homepage
