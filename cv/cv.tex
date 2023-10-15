@@ -112,11 +112,22 @@ Advisor: Jeremy Avigad
 \section{Experience}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
+  \textbf{PhD Student Researcher}, Northeastern University & \hfill 2022-Present \\[3pt]
+  \multicolumn{2}{@{}X@{}}{
+  \begin{minipage}[t]{\linewidth}
+      \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+          \item[-] Working in the intersection of probabilistic program semantics and knowledge compilation
+      \end{itemize}
+      \end{minipage}
+  }
+  \end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{NSF REU Researcher}, University of Tennessee at Chattanooga & \hfill 2021 \\[3pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[-] Classified the Krein--von Neumann extension on regular even--order quasi--differential operators
+        \item[-] Classified an extension of certain quasi-differential operators on a Hilbert space
         \item[-] Published in \textit{Opuscula Mathematica}
     \end{itemize}
     \end{minipage}
@@ -139,9 +150,6 @@ Advisor: Jeremy Avigad
 %Pubs
 \section{Publications}
 
-\textit{33 Years of Mathematicians and Software Engineers: A Case Study in the Evolution of Proof Assistants.} \newline
-G. Lincroft, M. Cho, M. Bazzaz, K. Hough, J. Bell. In submission \textit{ICSE 2024.}
-
 \textit{The Krein-von Neumann extension of a regular even order quasi-differential operator.} 
 M. Cho, S. Hoisington, B. Udall, R. Nichols. Opuscula Mathematica. 41.6 (2021): 805-841.\footnote{In math, author order is alphabetical. All authors contributed equally.}
 
@@ -151,30 +159,39 @@ M. Cho, S. Hoisington, B. Udall, R. Nichols. Opuscula Mathematica. 41.6 (2021): 
     \textbf{Scaling Decision--Theoretic Probabilistic Programming Through Factorization} & \hfill \begin{tabular}{r}
         DRAGSTERS \\ @ PLDI 2023
     \end{tabular}\\[3pt]
-    Joint work with Steven Holtzen. \textbf{PLDI SRC 2023 First Place.}
+    PLDI Student Research Competition 2023 First Place.
 \end{tabularx}
 
 %Projects
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Generic Max-Sum Optimization Problem Solving On Semirings} & \hfill Rust\\[3pt]
-    \multicolumn{2}{@{}X@{}}{We introduce a class of semirings that admits a tractable branch-and-bound algorithm in the style of Huang and Darwiche to solve max-sum optimization problems frequently seen in probabilistic reasoning.}  \\
+      \texttt{dappl}:~\textbf{Optimization-via-compilation In Discrete Probabilistic Programs}
+     & \hfill Rust, OCaml\\[3pt]
+    \multicolumn{2}{@{}X@{}}{Designing a functional programming language to reason about Bayesian decision making under uncertainty, utilizing a branch-and-bound style algorithm to scalably solve maximum expected utility problems.}  \\
 \end{tabularx}
 
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+%   \texttt{FreeDice}:~\textbf{Weighted Model Counting via Effects}
+%  & \hfill OCaml, Haskell \\[3pt]
+% \multicolumn{2}{@{}X@{}}{Designing a discrete probabilistic programming language using effect handlers to reason modularly about knowledge compilation targets (BDDs, SDDs), weighted model counting, and language extensions.}  \\
+% \end{tabularx}
+
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{The Next 700 Probabilistic Programming Languages Beyond Inference} & \hfill \\[3pt]
-    \multicolumn{2}{@{}X@{}}{We discuss, on top of a simple monadic discrete probabilistic programming language, how optimization over inference can also take on (co-)monadic shape while still maintaining tractability via Boolean compilation.}  \\
+    \textbf{The Evolution of Proof Assistants} & \hfill Jupyter Notebook, Typescript \\[3pt]
+    \multicolumn{2}{@{}X@{}}{Mined the GitHub data of Lean 3, Coq, and Isabelle and their respective math libraries to provide actionable insights on best development organizational practices for theorem proving communities.}  \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Cops and Robbers in Lean} & \hfill Lean 3\\[3pt]
-\multicolumn{2}{@{}X@{}}{We formalized the game of Cops and Robbers on a graph and associated theorems such as \textit{a complete graph is always cop-win} and \textit{every cop-win graph has a corner}.}  \\
+\multicolumn{2}{@{}X@{}}{Formalized the game of Cops and Robbers on a graph and associated theorems such as \textit{a complete graph is always cop-win} and \textit{every cop-win graph has a corner}.}  \\
 \end{tabularx}
 
 \section{Awards}
 
 PLMW@PLDI 2023 scholarship recipient.
+
+OPLSS 2022 scholarship recipient.
 
 University and College honors from Carnegie Mellon.
 
@@ -182,7 +199,9 @@ University and College honors from Carnegie Mellon.
 
 Fluent in Korean and English.
 
-Experience in functional programming (Lean, Coq, Haskell, ML dialects), Python, Rust, Dafny, LaTeX.
+Experience in functional programming (Lean, Haskell, OCaml, Standard ML), Python, Rust, LaTeX.
 
-5 semesters of TA experience in mathematics and logic, including one graduate course, at CMU.
+Comfortable with Unix, Git.
+
+Five semesters of TA experience in mathematics and logic, including one graduate course, at CMU.
 \end{document}
