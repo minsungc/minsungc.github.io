@@ -24,7 +24,9 @@ I'm a first-generation Korean American. My Erdős number is 5. According to Davi
 
 ### Papers
 
-I have an old paper from undergrad from when I was at the UTC Math REU. It's published in *Opuscula Mathematica*.
+I have two papers in submission.  
+
+There is an old paper in mathematical analysis from when I was at the UTC Math REU. It's published in *Opuscula Mathematica*.
 
 ### Talks
 
