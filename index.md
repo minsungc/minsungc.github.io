@@ -9,6 +9,8 @@ footer-html: hello!
 
 I'm a 2nd year PhD student at the amazing [Programming Research Laboratory](https://prl.khoury.northeastern.edu/) at Northeastern University, working with [Steven Holtzen](https://www.khoury.northeastern.edu/home/sholtzen/). 
 
+I am an incoming R&D intern at RelationalAI in Summer 2024, working on the Rel language.
+
 I received my BS from Carnegie Mellon University, where I was advised by [Jeremy Avigad](https://www.andrew.cmu.edu/user/avigad/).
 
 My interests are primarily in programming languages and artificial intelligence. I build bridges between knowledge compilation and probabilistic program semantics. 
@@ -24,7 +26,7 @@ I'm a first-generation Korean American. My Erdős number is 5. According to Davi
 
 ### Papers
 
-I have two papers in submission.  
+I have two papers in submission.  ****
 
 There is an old paper in mathematical analysis from when I was at the UTC Math REU. It's published in *Opuscula Mathematica*.
 
