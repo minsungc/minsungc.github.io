@@ -3,7 +3,7 @@ pagetitle: Minsung's Homepage
 footer-html: hello!
 ...
 
-## Minsung's Homepage
+## Minsung's **Homepage**
 
 [CV](https://cho.minsung.pl/cv/cv.pdf) | [GitHub](https://github.com/minsungc) | minsung AT ccs DOT neu DOT edu
 
@@ -25,8 +25,6 @@ I'm also interested in the following things, in no particular order:
 I'm a first-generation Korean American. My Erdős number is 5. According to David Savitt's Springer GTM personality quiz, I am Mac Lane's *Categories for the Working Mathematician*.
 
 ### Papers
-
-I have two papers in submission.  ****
 
 There is an old paper in mathematical analysis from when I was at the UTC Math REU. It's published in *Opuscula Mathematica*.
 
