@@ -26,6 +26,10 @@ I'm a first-generation Korean American. My Erdős number is 5. According to Davi
 
 ### Papers
 
+| <!-- -->    | <!-- -->    |
+|:-------------|------:|
+| Thirty-three Years of Mathematicians and Software Engineers: A Case Study of Proof Assistant Ecosystems <br> <sub>Gwenyth Lincroft*, Minsung Cho*, Mahsa Bazzaz, Katherine Hough, Jon Bell.</sub> | MSR 2024|
+
 There is an old paper in mathematical analysis from when I was at the UTC Math REU. It's published in *Opuscula Mathematica*.
 
 ### Talks
