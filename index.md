@@ -13,14 +13,13 @@ I am an incoming R&D intern at RelationalAI in Summer 2024, working on the Rel l
 
 I received my BS from Carnegie Mellon University, where I was advised by [Jeremy Avigad](https://www.andrew.cmu.edu/user/avigad/).
 
-My interests are primarily in programming languages and artificial intelligence. I build bridges between knowledge compilation and probabilistic program semantics. 
+My interests are primarily in programming languages. Lately I've been tinkering with continuations and effects with primary application towards modular probabilistic programming.
 
 I'm also interested in the following things, in no particular order:
 
-* Algebraic effects
 * Interactive theorem proving
 * Specialty coffee
-* Distracting my labmates with casual conversation
+* Distracting my labmates
 
 I'm a first-generation Korean American. My Erdős number is 5. According to David Savitt's Springer GTM personality quiz, I am Mac Lane's *Categories for the Working Mathematician*.
 
@@ -28,7 +27,7 @@ I'm a first-generation Korean American. My Erdős number is 5. According to Davi
 
 | <!-- -->    | <!-- -->    |
 |:-------------|------:|
-| Thirty-three Years of Mathematicians and Software Engineers: A Case Study of Proof Assistant Ecosystems <br> <sub>Gwenyth Lincroft*, Minsung Cho*, Mahsa Bazzaz, Katherine Hough, Jon Bell.</sub> | MSR 2024|
+| Thirty-three Years of Mathematicians and Software Engineers: A Case Study of Proof Assistant Ecosystems <br> <sub>Gwenyth Lincroft\*, Minsung Cho\*, Mahsa Bazzaz, Katherine Hough, Jon Bell.</sub> | MSR 2024|
 
 There is an old paper in mathematical analysis from when I was at the UTC Math REU. It's published in *Opuscula Mathematica*.
 
