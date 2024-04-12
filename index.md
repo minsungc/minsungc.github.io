@@ -28,7 +28,7 @@ I'm a first-generation Korean American. My Erdős number is 5. According to Davi
 
 | <!-- -->    | <!-- -->    |
 |:-------------|------:|
-| Thirty-Three Years of Mathematicians and Software Engineers: A Case Study of Domain Expertise and Participation in Proof Assistant Ecosystems <br> <sub>Gwenyth Lincroft\*, Minsung Cho\*, Mahsa Bazzaz, Katherine Hough, Jon Bell.</sub> | MSR 2024|
+| Thirty-Three Years of Mathematicians and Software Engineers: A Case Study of Domain Expertise and Participation in Proof Assistant Ecosystems <br> <sub>Gwenyth Lincroft\*, Minsung Cho\*, Katherine Hough, Mahsa Bazzaz, Jon Bell.</sub> | MSR 2024|
 
 There is an old paper in mathematical analysis from when I was at the UTC Math REU. It's published in *Opuscula Mathematica*.
 
@@ -36,4 +36,5 @@ There is an old paper in mathematical analysis from when I was at the UTC Math R
 
 | <!-- -->    | <!-- -->    |
 |:-------------|------:|
+| **Semirings for Optimization in Probabilistic Programming**<br>(or: how a probabilistic programmer got into Datalog)      | RelationalAI 2024 |
 | **Scaling Decision-Theoretic Probabilistic Programs Through Factorization.**<br>🏆 PLDI SRC First Place.       | SRC, DRAGSTERS<br>PLDI 2023 |
