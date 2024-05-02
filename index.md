@@ -7,9 +7,10 @@ footer-html: hello!
 
 [CV](https://cho.minsung.pl/cv/cv.pdf) | [GitHub](https://github.com/minsungc) | minsung AT ccs DOT neu DOT edu
 
-I'm a 2nd year PhD student at the amazing [Programming Research Laboratory](https://prl.khoury.northeastern.edu/) at Northeastern University, working with [Steven Holtzen](https://www.khoury.northeastern.edu/home/sholtzen/). 
+I'm a 2.5th year PhD student at the amazing [Programming Research Laboratory](https://prl.khoury.northeastern.edu/) at Northeastern University, working with [Steven Holtzen](https://www.khoury.northeastern.edu/home/sholtzen/). 
 
-I am an incoming R&D intern at RelationalAI in Summer 2024, working on the Rel language.
+I am an R&D intern at RelationalAI in Summer 2024, working on 
+the Rel language and compiler.
 
 I received my BS from Carnegie Mellon University, where I was advised by [Jeremy Avigad](https://www.andrew.cmu.edu/user/avigad/).
 
