@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.1 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,5 +16,114 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{ydnt/global//global/global}
+    \entry{lincroft2024thirty}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=62659ecd9722774474e244f4820bc045}{%
+           family={Lincroft},
+           familyi={L\bibinitperiod},
+           given={Gwenyth},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dae9a8ed7cf6b44d5eede4fc5fb74ba4}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Minsung},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c041cbdd966b5b41166ab3be2c7ff3e}{%
+           family={Bazzaz},
+           familyi={B\bibinitperiod},
+           given={Mahsa},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b58c5d99cf5393ea0aca1c9fae328ec}{%
+           family={Hough},
+           familyi={H\bibinitperiod},
+           given={Katherine},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a7cc407a176b488112ef6ba72230e19a}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{051656dee900fd5491ac16f765fb0cab}
+      \strng{fullhash}{91e2014118e9a5583febcd8466bca54a}
+      \strng{bibnamehash}{91e2014118e9a5583febcd8466bca54a}
+      \strng{authorbibnamehash}{91e2014118e9a5583febcd8466bca54a}
+      \strng{authornamehash}{051656dee900fd5491ac16f765fb0cab}
+      \strng{authorfullhash}{91e2014118e9a5583febcd8466bca54a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 21st International Conference on Mining Software Repositories}
+      \field{title}{Thirty-Three Years of Mathematicians and Software Engineers: A Case Study of Domain Expertise and Participation in Proof Assistant Ecosystems}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+    \entry{cho2021krein}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=dae9a8ed7cf6b44d5eede4fc5fb74ba4}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Minsung},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44037c45ccc599ecccc8eae232ab1b88}{%
+           family={Hoisington},
+           familyi={H\bibinitperiod},
+           given={Seth},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d17cc34f3acb587b582822e93967e32f}{%
+           family={Nichols},
+           familyi={N\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=87c86c7233f2e77d8069f188f362c536}{%
+           family={Udall},
+           familyi={U\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {AGH University Press}%
+      }
+      \strng{namehash}{63f9b4893a8849cd9859239b2f2b2840}
+      \strng{fullhash}{2209eec32f9aa1bd8daba213d26a33b3}
+      \strng{bibnamehash}{2209eec32f9aa1bd8daba213d26a33b3}
+      \strng{authorbibnamehash}{2209eec32f9aa1bd8daba213d26a33b3}
+      \strng{authornamehash}{63f9b4893a8849cd9859239b2f2b2840}
+      \strng{authorfullhash}{2209eec32f9aa1bd8daba213d26a33b3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Opuscula Mathematica}
+      \field{number}{6}
+      \field{title}{The Krein-von Neumann extension of a regular even order quasi-differential operator}
+      \field{volume}{41}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{805\bibrangedash 841}
+      \range{pages}{37}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

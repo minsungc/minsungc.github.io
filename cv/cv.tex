@@ -20,7 +20,7 @@
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url, amsmath}
-\usepackage{parskip} 	
+\usepackage{parskip}
 
 %other packages for formatting
 \RequirePackage{color}
@@ -29,38 +29,33 @@
 \usepackage[scale=0.9]{geometry}
 
 %tabularx environment
-\usepackage{tabularx}
+\usepackage{array, tabularx}
 
 %for lists within experience section
 \usepackage{enumitem}
 
 % centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X} 
-
-%to prevent spillover of tabular into next pages
-\usepackage{supertabular}
-\usepackage{tabularx}
-\newlength{\fullcollw}
-\setlength{\fullcollw}{0.47\textwidth}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 
 %custom \section
-\usepackage{titlesec}				
+\usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{multirow}
 
-%CV Sections inspired by: 
+%CV Sections inspired by:
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{10pt}
 
 %for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[style=authoryear,sorting=ydnt, backend=biber,maxbibnames=10]{biblatex}
 
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-\addbibresource{citations.bib}
+
+\addbibresource{pubs.bib}
 \setlength\bibitemsep{1em}
 
 %for social icons
@@ -75,7 +70,7 @@
 \begin{document}
 
 % non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -89,103 +84,95 @@
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Minsung Cho} \\[7.5pt]
-\href{mailto:minsung@ccs.neu.edu}{\raisebox{-0.05\height}\ minsung@ccs.neu.edu} \ $|$ \ \href{cho.minsung.pl}{cho.minsung.pl} 
+\href{mailto:minsung@ccs.neu.edu}{\raisebox{-0.05\height}\ minsung@ccs.neu.edu} \ $|$ \ \href{cho.minsung.pl}{cho.minsung.pl}
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
+\begin{tabularx}{\linewidth}{ p{0.8\textwidth} @{\extracolsep{\fill}} r}
 \textbf{Northeastern University}, Ph.D. Computer Science & \hfill 2022--Present \\
 [3pt]
 Advisor: Steven Holtzen\vspace{0.5em}\\
-\textbf{Carnegie Mellon University}, B.S. Mathematics and Philosophy (Logic track) & \hfill 2018--2022 \\ 
+\textbf{Carnegie Mellon University}, B.S. Mathematics and Philosophy (Logic track) & \hfill 2018--2022 \\
 [3pt]
 Thesis: \textit{Cops and Robbers in Lean} \\
-
 Advisor: Jeremy Avigad
-
 \end{tabularx}
 
 %Experience
 \section{Experience}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-  \textbf{PhD Student Researcher}, Northeastern University & \hfill 2022-Present \\[3pt]
+\begin{tabularx}{\linewidth}{p{0.8\textwidth} @{\extracolsep{\fill}} r}
+  \textbf{R\&D Intern}, Metadata Team, RelationalAI & May 2024 --- \\
   \multicolumn{2}{@{}X@{}}{
   \begin{minipage}[t]{\linewidth}
-      \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-          \item[-] Working in the intersection of probabilistic program semantics and knowledge compilation
+      \begin{itemize}[nosep,after=\strut, itemsep=3pt]
+          \item[-] Developing tools to safely and clearly expose query optimizer heuristics to users
       \end{itemize}
       \end{minipage}
   }
-  \end{tabularx}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{NSF REU Researcher}, University of Tennessee at Chattanooga & \hfill 2021 \\[3pt]
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[-] Classified an extension of certain quasi-differential operators on a Hilbert space
-        \item[-] Published in \textit{Opuscula Mathematica}
-    \end{itemize}
-    \end{minipage}
-}
 \end{tabularx}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Researcher in Combinatorics}, Carnegie Mellon University & \hfill 2020 \\[3pt]
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[-] Generalized the cop-win property to 1-connected infinite graphs
-        \item[-] Research featured on 2021 CMU Mathematics newsletter
-        \item[-] Grant proposal featured by CMU Undergraduate Research for exceptional writing
-    \end{itemize}
-    \end{minipage}
-}
+\begin{tabularx}{\linewidth}{p{0.8\textwidth} @{\extracolsep{\fill}} r}
+  \textbf{PhD Student Researcher}, Northeastern University & Sep 2022 --- \\
+  \multicolumn{2}{@{}X@{}}{
+  \begin{minipage}[t]{\linewidth}
+      \begin{itemize}[nosep,after=\strut, itemsep=3pt]
+          \item[-] Working in expressive knowledge compilation
+      \end{itemize}
+      \end{minipage}
+  }
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{p{0.8\textwidth} @{\extracolsep{\fill}} r}
+\textbf{NSF REU Researcher}, University of Tennessee at Chattanooga & Jun --- Jul 2021
+\end{tabularx}
+
+\begin{tabularx}{\hsize}{p{0.8\textwidth} @{\extracolsep{\fill}} r}
+\textbf{Researcher in Combinatorics}, Carnegie Mellon University & Jun --- Aug 2020 \\
 \end{tabularx}
 
 %Pubs
 \section{Publications}
 
-\textit{The Krein-von Neumann extension of a regular even order quasi-differential operator.} 
-M. Cho, S. Hoisington, B. Udall, R. Nichols. Opuscula Mathematica. 41.6 (2021): 805-841.\footnote{In math, author order is alphabetical. All authors contributed equally.}
+\nocite{*}
+\printbibliography[heading=none]
 
 \section{Invited Talks}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Scaling Decision--Theoretic Probabilistic Programming Through Factorization} & \hfill \begin{tabular}{r}
+\begin{tabularx}{\linewidth}{ p{0.8\textwidth} @{\extracolsep{\fill}} r }
+    \textbf{Scaling Decision-Theoretic Probabilistic Programming Through \newline Factorization} & \hfill \begin{tabular}{r}
         DRAGSTERS \\ @ PLDI 2023
     \end{tabular}\\[3pt]
     PLDI Student Research Competition 2023 First Place.
 \end{tabularx}
 
-%Projects
-\section{Projects}
+% %Projects
+% \section{Projects}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-      \texttt{dappl}:~\textbf{Optimization-via-compilation In Discrete Probabilistic Programs}
-     & \hfill Rust, OCaml\\[3pt]
-    \multicolumn{2}{@{}X@{}}{Designing a functional programming language to reason about Bayesian decision making under uncertainty, utilizing a branch-and-bound style algorithm to scalably solve maximum expected utility problems.}  \\
-\end{tabularx}
-
-% \begin{tabularx}{\linewidth}{ @{}l r@{} }
-%   \texttt{FreeDice}:~\textbf{Weighted Model Counting via Effects}
-%  & \hfill OCaml, Haskell \\[3pt]
-% \multicolumn{2}{@{}X@{}}{Designing a discrete probabilistic programming language using effect handlers to reason modularly about knowledge compilation targets (BDDs, SDDs), weighted model counting, and language extensions.}  \\
+% \begin{tabularx}{\linewidth}{ p{0.8\textwidth} @{\extracolsep{\fill}} r}
+%       \texttt{dappl}:~\textbf{Optimization-via-compilation In Discrete Probabilistic Programs}
+%      & \hfill Rust, OCaml\\[3pt]
+%     \multicolumn{2}{@{}X@{}}{Designing a functional programming language to reason about Bayesian decision making under uncertainty, utilizing a branch-and-bound style algorithm to scalably solve maximum expected utility problems.}  \\
 % \end{tabularx}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{The Evolution of Proof Assistants} & \hfill Jupyter Notebook, Typescript \\[3pt]
-    \multicolumn{2}{@{}X@{}}{Mined the GitHub data of Lean 3, Coq, and Isabelle and their respective math libraries to provide actionable insights on best development organizational practices for theorem proving communities.}  \\
-\end{tabularx}
+% % \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% %   \texttt{FreeDice}:~\textbf{Weighted Model Counting via Effects}
+% %  & \hfill OCaml, Haskell \\[3pt]
+% % \multicolumn{2}{@{}X@{}}{Designing a discrete probabilistic programming language using effect handlers to reason modularly about knowledge compilation targets (BDDs, SDDs), weighted model counting, and language extensions.}  \\
+% % \end{tabularx}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Cops and Robbers in Lean} & \hfill Lean 3\\[3pt]
-\multicolumn{2}{@{}X@{}}{Formalized the game of Cops and Robbers on a graph and associated theorems such as \textit{a complete graph is always cop-win} and \textit{every cop-win graph has a corner}.}  \\
-\end{tabularx}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+%     \textbf{The Evolution of Proof Assistants} & \hfill Jupyter Notebook, Typescript \\[3pt]
+%     \multicolumn{2}{@{}X@{}}{Mined the GitHub data of Lean 3, Coq, and Isabelle and their respective math libraries to provide actionable insights on best development organizational practices for theorem proving communities.}  \\
+% \end{tabularx}
+
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{Cops and Robbers in Lean} & \hfill Lean 3\\[3pt]
+% \multicolumn{2}{@{}X@{}}{Formalized the game of Cops and Robbers on a graph and associated theorems such as \textit{a complete graph is always cop-win} and \textit{every cop-win graph has a corner}.}  \\
+% \end{tabularx}
 
 \section{Awards}
 
@@ -203,5 +190,13 @@ Experience in functional programming (Lean, Haskell, OCaml, Standard ML), Python
 
 Comfortable with Unix, Git.
 
-Five semesters of TA experience in mathematics and logic, including one graduate course, at CMU.
+Six semesters of teaching experience:
+\begin{itemize}
+    \item Spring 2024: CS4400/5400 Programming Languages
+    \item Spring 2022: 21-268 Multidimensional Calculus
+    \item Fall 2022: 80-310/610 Formal Logic
+    \item Spring 2022: 21-268 Multidimensional Calculus
+    \item Fall 2021: 21-127 Concepts in Mathematics
+    \item Spring 2020: 21-259 Calculus III
+\end{itemize}
 \end{document}
