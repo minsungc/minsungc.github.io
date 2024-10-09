@@ -2,7 +2,7 @@ h1{font-size:2.4rem}
 
 h2{font-size:2.2rem}
 
-h3{font-size:1.75rem}
+h3{font-size:1rem; font-style: italic; font-weight: normal;}
 
 .header{font-size:2.5rem;font-style:italic;color:rgb(91,64,147)}
 
@@ -18,9 +18,23 @@ body {
   color: #000;
 }
 
-iframe 
+pre {
+  font-size: 0.8em; /* Adjust font size as necessary */
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: monospace;
+}
+
+
+iframe
 {
-  border: none; 
+  border: none;
   height: 100vh;        /* Viewport-relative units */
   width: 100%
 }
