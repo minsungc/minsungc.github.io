@@ -21,6 +21,14 @@
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    #textContainer {
+            border: 1px solid #000;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+    #text {
+            visibility: hidden;
+        }
   </style>
   <link rel="stylesheet" href="css/default.css" />
 </head>
@@ -28,9 +36,13 @@
 <h1 id="world-mental-health-day">World Mental Health Day</h1>
 <h3>“Maybe ‘we’ is something that comes into being by saying it over and
 over.” – Franny Choi</h3>
-<p>Everyone has their own story about their journey through mental
-health. Here is mine.</p>
-<pre><code>I have pretty bad anxiety and mild ADHD. I thought it was depression but I got rediagnosed.
+<p>It's pretty common to hear that everyone has their own journey through mental health.
+That's pretty isolating, and societal stigma around mental health does not help.
+Anyways, click on that big blank space below if you want to see the journey that I've been going through.
+You don't have to if you don't want.</p>
+
+<div id="textContainer" onclick="toggleText()">
+<pre id="text"><code>I have pretty bad anxiety and mild ADHD. I thought it was depression but I got rediagnosed.
 
 It has been 2.5 years since I realized I can&#39;t get myself to do anything.
 
@@ -40,19 +52,38 @@ Four months since I couldn&#39;t leave my house for six weeks.
 
 Three months since I started NDRIs.
 
-Only three weeks since I started therapy again.</code></pre>
+Only four weeks since I started therapy again.</code></pre>
+</div>
+
+<script>
+    function toggleText() {
+            const text = document.getElementById("text");
+
+            if (text.style.visibility === "hidden") {
+                text.style.visibility = "visible";
+            } else {
+                text.style.visibility = "hidden";
+            }
+    }
+</script>
+
+<p>What about my story is my own?</p>
+
 <p>I really don’t think my story is very original. If anything the only
 original thing about my story is that it is my own lived experience. But
 the whole misdiagnosis thing, the medication, the therapy–people have
 been through this.</p>
 <p>I also don’t think I’m being very original when I say that my mental
-health struggle has been lonely. No one’s ever really reached out and held my hand; I sought out professional help by myself. That’s alright. I
-never really was the one to be vulnerable anyways. I’m working on
+health struggle has been lonely. No one’s ever really reached out and held my hand; I sought out professional help by myself. That’s alright.
+Asking whether or not people are okay has become more courtesy than concern.
+I never really was the one to be vulnerable anyways. I’m working on
 that.</p>
 <p>I’m definitely not being original when I say that being Korean and a
-guy does not really help with the loneliness. Deprogramming myself from
+guy does not really help with the loneliness.
+Maybe in a parallel universe I would smoke a cigarette instead of writing this.
+Deprogramming myself from
 masking as an emotionless forward facing robot destined for “success”
-(whatever the fuck that means) has been a journey in and of itself.</p>
+(whatever the fuck that means) has been a tale in and of itself.</p>
 <p>But I find comfort in my unoriginality. I find comfort that there are
 people, the vast majority of whom I don’t know, who feel the same
 feelings that I do. Who live different lives but walk the same path I am. Who work different jobs but fish in the same river.</p>
