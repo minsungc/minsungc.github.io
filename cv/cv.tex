@@ -1,202 +1,139 @@
-\documentclass[12pt]{article}
+\documentclass[11pt]{article} % Default font size
+\pagenumbering{gobble}
+\usepackage[skip=9pt plus1pt]{parskip}
 
-%----------------------------------------------------------------------------------------
-%	FONT
-%----------------------------------------------------------------------------------------
-
-% % fontspec allows you to use TTF/OTF fonts directly
-% \usepackage{fontspec}
-% \defaultfontfeatures{Ligatures=TeX}
-
-% % modified for ShareLaTeX use
-% \setmainfont[
-% SmallCapsFont = Fontin-SmallCaps.otf,
-% BoldFont = Fontin-Bold.otf,
-% ItalicFont = Fontin-Italic.otf
-% ]
-% {Fontin.otf}
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES
-%----------------------------------------------------------------------------------------
-\usepackage{url, amsmath}
-\usepackage{parskip}
-
-%other packages for formatting
-\RequirePackage{color}
-\RequirePackage{graphicx}
-\usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.9]{geometry}
-
-%tabularx environment
-\usepackage{array, tabularx}
-
-%for lists within experience section
-\usepackage{enumitem}
-
-% centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X}
-
-%custom \section
-\usepackage{titlesec}
-\usepackage{multicol}
-\usepackage{multirow}
-
-%CV Sections inspired by:
-%http://stefano.italians.nl/archives/26
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
-
-%for publications
-\usepackage[style=authoryear,sorting=ydnt, backend=biber,maxbibnames=10]{biblatex}
-
-%Setup hyperref package, and colours for links
-\usepackage[unicode, draft=false]{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-
-\addbibresource{pubs.bib}
-\setlength\bibitemsep{1em}
-
-%for social icons
-\usepackage{fontawesome5}
-
-%debug page outer frames
-%\usepackage{showframe}
-
-%----------------------------------------------------------------------------------------
-%	BEGIN DOCUMENT
-%----------------------------------------------------------------------------------------
-\begin{document}
-
-% non-numbered pages
-\pagestyle{empty}
-
-%----------------------------------------------------------------------------------------
-%	TITLE
-%----------------------------------------------------------------------------------------
-
-% \begin{tabularx}{\linewidth}{ @{}X X@{} }
-% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
-% \raisebox{-0.05\height}\faGithub\ username \ | \
-% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
-% \end{tabularx}
-
-\begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Minsung Cho} \\[7.5pt]
-\href{mailto:minsung@ccs.neu.edu}{\raisebox{-0.05\height}\ minsung@ccs.neu.edu} \ $|$ \ \href{cho.minsung.pl}{cho.minsung.pl}
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-\section{Education}
-\begin{tabularx}{\linewidth}{ p{0.8\textwidth} @{\extracolsep{\fill}} r}
-\textbf{Northeastern University}, Ph.D. Computer Science & \hfill 2022--Present \\
-[3pt]
-Advisor: Steven Holtzen\vspace{0.5em}\\
-\textbf{Carnegie Mellon University}, B.S. Mathematics and Philosophy (Logic track) & \hfill 2018--2022 \\
-[3pt]
-Thesis: \textit{Cops and Robbers in Lean} \\
-Advisor: Jeremy Avigad
-\end{tabularx}
-
-%Experience
-\section{Experience}
-
-\begin{tabularx}{\linewidth}{p{0.8\textwidth} @{\extracolsep{\fill}} r}
-  \textbf{R\&D Intern}, Metadata Team, RelationalAI & May 2024 --- \\
-  \multicolumn{2}{@{}X@{}}{
-  \begin{minipage}[t]{\linewidth}
-      \begin{itemize}[nosep,after=\strut, itemsep=3pt]
-          \item[-] Developing tools to safely and clearly expose query optimizer heuristics to users
-      \end{itemize}
-      \end{minipage}
-  }
-\end{tabularx}
-
-\begin{tabularx}{\linewidth}{p{0.8\textwidth} @{\extracolsep{\fill}} r}
-  \textbf{PhD Student Researcher}, Northeastern University & Sep 2022 --- \\
-  \multicolumn{2}{@{}X@{}}{
-  \begin{minipage}[t]{\linewidth}
-      \begin{itemize}[nosep,after=\strut, itemsep=3pt]
-          \item[-] Working in expressive knowledge compilation
-      \end{itemize}
-      \end{minipage}
-  }
-\end{tabularx}
-
-\begin{tabularx}{\textwidth}{p{0.8\textwidth} @{\extracolsep{\fill}} r}
-\textbf{NSF REU Researcher}, University of Tennessee at Chattanooga & Jun --- Jul 2021
-\end{tabularx}
-
-\begin{tabularx}{\hsize}{p{0.8\textwidth} @{\extracolsep{\fill}} r}
-\textbf{Researcher in Combinatorics}, Carnegie Mellon University & Jun --- Aug 2020 \\
-\end{tabularx}
-
-%Pubs
-\section{Publications}
+\usepackage[sorting=ydnt]{biblatex}
+\newcommand{\myname}{\underline{Minsung Cho}}
 
 \nocite{*}
+\addbibresource{pubs.bib}
+
+\usepackage[hmargin=25mm, vmargin=30mm, top=20mm]{geometry} % Use A4 paper and set margins
+
+\usepackage{hyperref}
+
+\setcounter{secnumdepth}{0} % Suppress section numbering
+
+\newcommand{\tabbedblock}[1]{
+\begin{tabbing}
+\hspace{2.5cm} \= \hspace{4cm} \= \kill
+#1
+\end{tabbing}
+}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\parbox{0.5\textwidth}{ % First block
+\huge{\textbf{Minsung Cho}}
+}
+\hfill % Horizontal space between the two blocks
+\parbox{0.5\textwidth}{ % Second block
+\begin{tabbing} % Enables tabbing
+\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+\href{mailto:minsung@ccs.neu.edu}{\texttt{minsung@ccs.neu.edu}} \\ % Home phone
+\href{https://minsungc.github.io}{minsungc.github.io}
+\end{tabbing}}
+
+\hrule
+
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT HISTORY SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\job}[6]{
+\begin{tabbing}
+\hspace{2.5cm} \= \kill
+\textbf{#1} \> \textit{#5}, \href{#4}{#3} \\
+\hspace{0.5cm}\textbf{#2} \> \hspace{0.5cm}#6
+\end{tabbing}
+}
+
+\section{Employment}
+
+\job
+{May 2025 -}{}
+{RelationalAI, Remote}
+{http://relational.ai}
+{Software Engineer}
+{Backend team. Compiler design for the query language Rel.}
+
+\job
+{Sep 2022 -}{Apr 2025}
+{Northeastern University, Boston, USA}
+{http://prl.khoury.northeastern.edu}
+{Graduate Research Assistant}
+{Research in programming languages resulting in two publications~\cite{cho2025,lincroft2024}.}
+
+\job
+{May 2024 -}{Dec 2024}
+{RelationalAI, Remote}
+{http://relational.ai}
+{R\&D Intern}
+{Backend team. Fine-grained optimizations for the query language Rel.}
+
+\job
+{Jun 2021 -}{Jul 2021}
+{University of Tennessee, Chattanooga, USA}
+{http://www.utc.edu}
+{REU Researcher}
+{Research in pure mathematics resulting in a publication~\cite{cho2021krein}.}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\tabbedblock{
+\bf{2025} \>
+\textbf{MS Computer Science}, Northeastern University, Boston, USA
+}
+
+%------------------------------------------------
+
+\tabbedblock{
+\bf{2022} \>
+\textbf{BS Mathematics and Philosophy}, Carnegie Mellon University, Pittsburgh, USA
+}
+
+%----------------------------------------------------------------------------------------
+%	Publication Section
+%----------------------------------------------------------------------------------------
+\section{Publications}
+
 \printbibliography[heading=none]
 
-\section{Invited Talks}
-
-\begin{tabularx}{\linewidth}{ p{0.8\textwidth} @{\extracolsep{\fill}} r }
-    \textbf{Scaling Decision-Theoretic Probabilistic Programming Through \newline Factorization} & \hfill \begin{tabular}{r}
-        DRAGSTERS \\ @ PLDI 2023
-    \end{tabular}\\[3pt]
-    PLDI Student Research Competition 2023 First Place.
-\end{tabularx}
-
-% %Projects
-% \section{Projects}
-
-% \begin{tabularx}{\linewidth}{ p{0.8\textwidth} @{\extracolsep{\fill}} r}
-%       \texttt{dappl}:~\textbf{Optimization-via-compilation In Discrete Probabilistic Programs}
-%      & \hfill Rust, OCaml\\[3pt]
-%     \multicolumn{2}{@{}X@{}}{Designing a functional programming language to reason about Bayesian decision making under uncertainty, utilizing a branch-and-bound style algorithm to scalably solve maximum expected utility problems.}  \\
-% \end{tabularx}
-
-% % \begin{tabularx}{\linewidth}{ @{}l r@{} }
-% %   \texttt{FreeDice}:~\textbf{Weighted Model Counting via Effects}
-% %  & \hfill OCaml, Haskell \\[3pt]
-% % \multicolumn{2}{@{}X@{}}{Designing a discrete probabilistic programming language using effect handlers to reason modularly about knowledge compilation targets (BDDs, SDDs), weighted model counting, and language extensions.}  \\
-% % \end{tabularx}
-
-% \begin{tabularx}{\linewidth}{ @{}l r@{} }
-%     \textbf{The Evolution of Proof Assistants} & \hfill Jupyter Notebook, Typescript \\[3pt]
-%     \multicolumn{2}{@{}X@{}}{Mined the GitHub data of Lean 3, Coq, and Isabelle and their respective math libraries to provide actionable insights on best development organizational practices for theorem proving communities.}  \\
-% \end{tabularx}
-
-% \begin{tabularx}{\linewidth}{ @{}l r@{} }
-% \textbf{Cops and Robbers in Lean} & \hfill Lean 3\\[3pt]
-% \multicolumn{2}{@{}X@{}}{Formalized the game of Cops and Robbers on a graph and associated theorems such as \textit{a complete graph is always cop-win} and \textit{every cop-win graph has a corner}.}  \\
-% \end{tabularx}
+%----------------------------------------------------------------------------------------
+%	Awards Section
+%----------------------------------------------------------------------------------------
 
 \section{Awards}
 
-PLMW@PLDI 2023 scholarship recipient.
+PLDI 2023 Student Research Competition First Place.
 
-OPLSS 2022 scholarship recipient.
+PLMW@PLDI 2023 Scholarship Recipient.
 
-University and College honors from Carnegie Mellon.
+OPLSS 2022 Travel Grant Recipient.
+
+University and college honors from Carnegie Mellon.
+
+%----------------------------------------------------------------------------------------
+%	Skills Section
+%----------------------------------------------------------------------------------------
 
 \section{Skills}
 
-Fluent in Korean and English.
+Proficient in
+Python,
+Julia,
+Rust, JS/TS,
+functional programming (Haskell, OCaml), Datalog.
 
-Experience in functional programming (Lean, Haskell, OCaml, Standard ML), Python, Rust, LaTeX.
+Comfortable with Unix, Git, Jira, LaTeX.
 
-Comfortable with Unix, Git.
-
-Six semesters of teaching experience:
-\begin{itemize}
-    \item Spring 2024: CS4400/5400 Programming Languages
-    \item Spring 2022: 21-268 Multidimensional Calculus
-    \item Fall 2022: 80-310/610 Formal Logic
-    \item Spring 2022: 21-268 Multidimensional Calculus
-    \item Fall 2021: 21-127 Concepts in Mathematics
-    \item Spring 2020: 21-259 Calculus III
-\end{itemize}
 \end{document}
