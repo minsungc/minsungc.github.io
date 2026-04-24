@@ -12,6 +12,9 @@
 
 \usepackage{hyperref}
 
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{*2.5}{*3.5}
+
 \setcounter{secnumdepth}{0} % Suppress section numbering
 
 \newcommand{\tabbedblock}[1]{
@@ -45,61 +48,91 @@
 %	EMPLOYMENT HISTORY SECTION
 %----------------------------------------------------------------------------------------
 
-\newcommand{\job}[6]{
-\begin{tabbing}
-\hspace{2.5cm} \= \kill
-\textbf{#1} \> \textit{#5}, \href{#4}{#3} \\
-\hspace{0.5cm}\textbf{#2} \> \hspace{0.5cm}#6
-\end{tabbing}
+\newcommand{\job}[7]{%
+{\setlength{\parskip}{0pt}%
+\par\noindent\textbf{\textit{#6}}\hfill\textbf{#1 #2}\par
+\noindent\href{#5}{#3}\hfill\textit{#4}\par}
+\nopagebreak
+\vspace{-6pt}
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\setlength{\topsep}{0pt}\setlength{\parsep}{0pt}
+    #7
+\end{itemize}
+\vspace{0.3em}
 }
 
 \section{Employment}
 
 \job
-{May 2025 -}{}
-{RelationalAI, Remote}
+{May 2025 -}{Present}
+{RelationalAI, Logic Engine team}{Remote}
 {http://relational.ai}
 {Software Engineer}
-{Backend team. Maintain the compiler stack for RelationalAI's logic engine.}
+{
+    \item Architected and implemented the imperative extension to RelationalAI's query language
+    \begin{itemize}
+        \item Delivered 10x+ speedups to enterprise queries over terabytes of data
+        \item Collaborated across teams to engineer new implementations of graph algorithms
+    \end{itemize}
+    \item Maintained the Protocol Buffer-based entry point into logic engine ($\sim$ 100k queries/day)
+    \item Implemented user and internal observability tools to diagnose slow queries
+}
 
 \job
 {Sep 2022 -}{Apr 2025}
-{Northeastern University, Boston, USA}
+{Northeastern University, Programming Research Lab}{Boston, USA}
 {http://prl.khoury.northeastern.edu}
-{Graduate Research Assistant}
-{Research in programming languages resulting in two publications~\cite{cho2025,lincroft2024}.}
+{Graduate Researcher}
+{
+    \item Designed and published a probababilistic programming language for optimization~\cite{cho2025}
+    \item Co-conducted and published an analysis of proof assistant community ecosystems~\cite{lincroft2024}
+    \item Assisted professors in teaching introductory classes in programming languages
+}
 
 \job
 {May 2024 -}{Dec 2024}
-{RelationalAI, Remote}
+{RelationalAI, Logic Engine team}{Remote}
 {http://relational.ai}
 {R\&D Intern}
-{Backend team. Worked on optimization observability for the Rel query language.}
+{
+    \item Developed a reverse compiler for Datalog to increase observability into query optimizations
+    \item Integrated visualizations of rule optimization into the profiler for our query language
+}
 
 \job
 {Jun 2021 -}{Jul 2021}
-{University of Tennessee, Chattanooga, USA}
+{University of Tennessee}{Chattanooga, USA}
 {http://www.utc.edu}
 {REU Researcher}
-{Research in pure mathematics resulting in a publication~\cite{cho2021krein}.}
+{
+    \item Researched and published in the theory of matrices in function spaces~\cite{cho2021krein}
+    \item Automated routine computation using Mathematica, saving weeks of in-person work
+}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
+\newcommand{\education}[6]{%
+{\setlength{\parskip}{0pt}%
+\par\noindent\textbf{\textit{#6}}\hfill\textbf{#1 #2}\par
+\noindent\href{#5}{#3}\hfill\textit{#4}\par}
+\nopagebreak
+\vspace{0.3em}
+}
+
 \section{Education}
 
-\tabbedblock{
-\bf{2025} \>
-\textbf{MS Computer Science}, Northeastern University, Boston, USA
-}
+\education
+{Sep 2022 -}{May 2025}
+{Northeastern University}{Boston, USA}
+{http://www.northeastern.edu}
+{Master of Science, Computer Science}
 
-%------------------------------------------------
-
-\tabbedblock{
-\bf{2022} \>
-\textbf{BS Mathematics and Philosophy}, Carnegie Mellon University, Pittsburgh, USA
-}
+\education
+{Aug 2018 -}{May 2022}
+{Carnegie Mellon University}{Pittsburgh, USA}
+{http://www.cmu.edu}
+{Bachelor of Science, Mathematics and Philosophy}
 
 %----------------------------------------------------------------------------------------
 %	Publication Section
@@ -112,13 +145,11 @@
 %	Awards Section
 %----------------------------------------------------------------------------------------
 
-\section{Awards}
+\section{Awards and Recognition}
 
-PLDI 2023 Student Research Competition First Place.
-
-PLMW@PLDI 2023 Scholarship Recipient.
-
-OPLSS 2022 Travel Grant Recipient.
+\noindent 1st Place, Student Research Competition, Programming Language Design \& Implementation (PLDI)\par
+\noindent Scholarship Recipient, Programming Languages Mentoring Workshop at PLDI (PLMW)\par
+\noindent University and College Honors, Carnegie Mellon University\par
 
 %----------------------------------------------------------------------------------------
 %	Skills Section
@@ -126,14 +157,9 @@ OPLSS 2022 Travel Grant Recipient.
 
 \section{Skills}
 
-Programming languages:
-Julia, Python,
-OCaml,
-Rust,
-Haskell, Standard ML, Lean, Datalog.
-
-Tools: Unix, Git, Jira, Docker, LaTeX.
-
-Teaching: Five semesters at CMU and one at Northeastern, including two graduate classes.
+\begin{description}\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}\setlength{\topsep}{0pt}
+    \item[Programming languages:] Julia, Python, Datalog, OCaml, Rust, Go, C, Haskell, Standard ML
+    \item[Tools:] Unix, Git, Jira, Docker, Datadog, Observe, Snowflake
+\end{description}
 
 \end{document}
