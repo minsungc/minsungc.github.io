@@ -1,6 +1,6 @@
 \documentclass[11pt]{article} % Default font size
 \pagenumbering{gobble}
-\usepackage[skip=9pt plus1pt]{parskip}
+\usepackage[skip=4pt plus1pt]{parskip}
 
 \usepackage[sorting=ydnt,maxbibnames=99]{biblatex}
 \newcommand{\myname}{\underline{Minsung Cho}}
@@ -8,12 +8,12 @@
 \nocite{*}
 \addbibresource{pubs.bib}
 
-\usepackage[hmargin=25mm, vmargin=30mm, top=20mm]{geometry} % Use A4 paper and set margins
+\usepackage[hmargin=20mm, top=14mm, bottom=12mm]{geometry} % US letter; set margins
 
 \usepackage{hyperref}
 
 \usepackage{titlesec}
-\titlespacing*{\section}{0pt}{*2.5}{*3.5}
+\titlespacing*{\section}{0pt}{*1.0}{*1.3}
 
 \setcounter{secnumdepth}{0} % Suppress section numbering
 
@@ -63,49 +63,52 @@
 \section{Employment}
 
 \job
-{May 2025 -}{Present}
+{May 2025 --}{Present}
 {RelationalAI, Logic Engine team}{Remote}
 {http://relational.ai}
 {Software Engineer}
 {
-    \item Architected and implemented the imperative extension to RelationalAI's query language
+    \item Design and implement the imperative extension to RelationalAI's query language
     \begin{itemize}
-        \item Delivered 10x+ speedups to enterprise queries over terabytes of data
-        \item Collaborated across teams to engineer new implementations of graph algorithms
+        \item Cut previously intractable enterprise queries to sub-hour runtimes
     \end{itemize}
-    \item Maintained the Protocol Buffer-based entry point into logic engine ($\sim$ 100k queries/day)
-    \item Implemented user and internal observability tools to diagnose slow queries
+    \item Build the GQL-style graph pattern matching extension for the query language
+    \item Maintain the database engine's Protocol Buffer-based entry point ($\sim$100k queries/day)
+    \item Develop an event-based user-facing logging tool to diagnose slow queries
 }
 
 \job
-{Sep 2022 -}{Apr 2025}
+{Sep 2022 --}{Apr 2025}
 {Northeastern University, Programming Research Lab}{Boston, USA}
 {http://prl.khoury.northeastern.edu}
 {Graduate Researcher}
 {
-    \item Designed and published a programming language for optimization, beating SotA~\cite{cho2025}
-    \item Co-conducted and published an analysis of proof assistant community ecosystems~\cite{lincroft2024}
-    \item Assisted professors in teaching introductory classes in programming languages
+    \item Designed a language to express optimization problems under uncertainty~\cite{cho2025}
+    \begin{itemize}
+        \item Implemented a novel binary decision diagram algorithm to compute optimal values
+        \item Beat a state-of-the-art probabilistic programming language in optimization benchmarks
+    \end{itemize}
+    \item Co-led the first empirical study of online proof assistant communities~\cite{lincroft2024}
 }
 
 \job
-{May 2024 -}{Dec 2024}
+{May 2024 --}{Dec 2024}
 {RelationalAI, Logic Engine team}{Remote}
 {http://relational.ai}
 {R\&D Intern}
 {
-    \item Developed a reverse compiler for Datalog to increase observability into query optimizations
-    \item Integrated visualizations of rule optimization into the profiler for our query language
+    \item Built a reverse compiler for Datalog to surface query optimizations for easier debugging
+    \item Integrated GraphViz visualizations of query optimizations into the query language's profiler
 }
 
 \job
-{Jun 2021 -}{Jul 2021}
+{Jun 2021 --}{Jul 2021}
 {University of Tennessee}{Chattanooga, USA}
 {http://www.utc.edu}
 {REU Researcher}
 {
-    \item Researched and published in the theory of matrices in function spaces~\cite{cho2021krein}
-    \item Automated routine computation using Mathematica, saving weeks of in-person work
+    \item Published research in the theory of matrices in function spaces~\cite{cho2021krein}
+    \item Automated routine computation in Mathematica, saving weeks of manual effort
 }
 
 %----------------------------------------------------------------------------------------
@@ -139,7 +142,9 @@
 %----------------------------------------------------------------------------------------
 \section{Publications}
 
-\printbibliography[heading=none]
+{\small
+\setlength{\bibitemsep}{1pt}
+\printbibliography[heading=none]}
 
 %----------------------------------------------------------------------------------------
 %	Awards Section
@@ -147,9 +152,9 @@
 
 \section{Awards and Recognition}
 
-\noindent 1st Place, Student Research Competition, Programming Language Design \& Implementation (PLDI)\par
-\noindent Scholarship Recipient, Programming Languages Mentoring Workshop at PLDI (PLMW)\par
-\noindent University and College Honors, Carnegie Mellon University\par
+\noindent First Place, ACM Student Research Competition at PLDI\hfill\textbf{2023}\par
+\noindent Scholarship Recipient, Programming Languages Mentoring Workshop (PLMW) at PLDI\hfill\textbf{2023}\par
+\noindent University and College Honors, Carnegie Mellon University\hfill\textbf{2022}\par
 
 %----------------------------------------------------------------------------------------
 %	Skills Section
@@ -158,7 +163,7 @@
 \section{Skills}
 
 \begin{description}\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}\setlength{\topsep}{0pt}
-    \item[Programming languages:] Julia, Python, Datalog, OCaml, Rust, Go, C, Haskell, Standard ML
+    \item[Programming languages:] Julia, Python, Datalog, OCaml, Rust, Go, C/C++, Haskell, Standard ML
     \item[Tools:] Unix, Git, Jira, Docker, Datadog, Observe, Snowflake
 \end{description}
 
