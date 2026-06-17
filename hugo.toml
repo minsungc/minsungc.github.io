@@ -1,0 +1,12 @@
+baseURL = 'https://minsungc.github.io/'
+locale = 'en-us'
+
+title = 'Minsung World'
+theme = 'hugo-bearblog'
+
+# Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+[permalinks]
+  blog = "/:slug/"
+  tags = "/blog/:slug"

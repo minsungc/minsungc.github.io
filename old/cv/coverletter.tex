@@ -1,0 +1,68 @@
+\documentclass[11pt]{article}
+\pagenumbering{gobble}
+\usepackage[skip=9pt plus1pt]{parskip}
+\usepackage[hmargin=20mm, top=14mm, bottom=12mm]{geometry} % US letter; matches cv.tex
+\usepackage{hyperref}
+
+%---------------------------------------------------------------------------------------
+%  Fill these in per application
+%---------------------------------------------------------------------------------------
+\newcommand{\company}{Epic Games}
+\newcommand{\role}{Senior Language Engineer}
+\newcommand{\greeting}{To whom it may concern}
+
+\begin{document}
+
+%---------------------------------------------------------------------------------------
+%  Letterhead (matches cv.tex)
+%---------------------------------------------------------------------------------------
+\parbox{0.5\textwidth}{
+\huge{\textbf{Minsung Cho}}
+}
+\hfill
+\parbox{0.5\textwidth}{
+\begin{tabbing}
+\hspace{3cm} \= \hspace{4cm} \= \kill
+\href{mailto:minsungc1@gmail.com}{\texttt{minsungc1@gmail.com}} \\
+\href{https://linkedin.com/in/minsung-c}{linkedin.com/in/minsung-c}
+\end{tabbing}}
+
+\hrule
+\vspace{1.5em}
+
+\today
+
+\vspace{1em}
+
+\noindent \greeting{},
+
+I'm excited to apply for the \role{} position at \company{}. I read the Verse
+paper in graduate school, and I was glad to see a role open in my home of New York City.
+Currently, I work on logic programming compilers for databases, and am interested in
+seeing it applied in other domains.
+
+At RelationalAI, I lead the design and implementation of extensions to our Datalog-based 
+declarative query
+language. This includes an imperative, procedural-style sublanguage and a GQL-style graph
+pattern-matching extension. I also maintain the database engine's primary entry point, which
+serves roughly 100k queries per day. The work spans the ``full stack" of compilers:
+from designing syntax based on customer feedback and working out the semantics of the language,
+to writing optimization passes and
+scaffolding the tooling and observability needed to debug all of it. In the short span of a year,
+my work has already been adopted by our largest enterprise customers as well as
+played a pivotal role in procuring new ones.
+
+This engineering is grounded in programming languages research, much like Verse.
+I designed and published a probabilistic programming language for optimization under uncertainty
+at OOPSLA that outperforms the state of the art, and
+I hold a master's in computer science from Northeastern's Programming Research Lab.
+At \company{}, I'm looking forward to contributing to the development of a language
+from theory to implementation at a scale larger than I have experienced so far.
+I have a proven track record of this, and would love to get to know the team.
+
+\vspace{1em}
+
+\noindent Thank you for your consideration, \\
+Minsung Cho
+
+\end{document}

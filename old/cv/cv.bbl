@@ -56,16 +56,14 @@
       \verb 10.1145/3720500
       \endverb
     \endentry
-    \entry{lincroft2024}{inproceedings}{}{}
+    \entry{lincroft2024}{inproceedings}{maxbibnames=2,minbibnames=2}{}
       \name{author}{5}{}{%
-        {{hash=62659ecd9722774474e244f4820bc045}{%
-           family={Lincroft},
-           familyi={L\bibinitperiod},
-           given={Gwenyth},
-           giveni={G\bibinitperiod}}}%
-        {{hash=fb67eebe478b7906b869604aceb17dc3}{%
-           family={\myname},
-           familyi={\bibinitperiod}}}%
+        {{hash=fc81576378b2d537e3ce4683fc908443}{%
+           family={{Gwenyth Lincroft\textsuperscript{*}}},
+           familyi={G\bibinitperiod}}}%
+        {{hash=420ac3ccf59d6380331d3df800605283}{%
+           family={{\myname\textsuperscript{*}}},
+           familyi={*\bibinitperiod}}}%
         {{hash=4b58c5d99cf5393ea0aca1c9fae328ec}{%
            family={Hough},
            familyi={H\bibinitperiod},
@@ -85,18 +83,19 @@
       \list{publisher}{1}{%
         {ACM}%
       }
-      \strng{namehash}{051656dee900fd5491ac16f765fb0cab}
-      \strng{fullhash}{c94e5590b376a42f0eed7634bfd2f433}
-      \strng{fullhashraw}{c94e5590b376a42f0eed7634bfd2f433}
-      \strng{bibnamehash}{051656dee900fd5491ac16f765fb0cab}
-      \strng{authorbibnamehash}{051656dee900fd5491ac16f765fb0cab}
-      \strng{authornamehash}{051656dee900fd5491ac16f765fb0cab}
-      \strng{authorfullhash}{c94e5590b376a42f0eed7634bfd2f433}
-      \strng{authorfullhashraw}{c94e5590b376a42f0eed7634bfd2f433}
+      \strng{namehash}{072f56cd338add9841fa77a6d36374a2}
+      \strng{fullhash}{6e2276fb8f61daf52070e5d1aa3033fa}
+      \strng{fullhashraw}{6e2276fb8f61daf52070e5d1aa3033fa}
+      \strng{bibnamehash}{40afd743eeecff980c4a6aedffc7642e}
+      \strng{authorbibnamehash}{40afd743eeecff980c4a6aedffc7642e}
+      \strng{authornamehash}{072f56cd338add9841fa77a6d36374a2}
+      \strng{authorfullhash}{6e2276fb8f61daf52070e5d1aa3033fa}
+      \strng{authorfullhashraw}{6e2276fb8f61daf52070e5d1aa3033fa}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{addendum}{\textsuperscript{*}Joint first authors.}
       \field{booktitle}{21st {IEEE/ACM} International Conference on Mining Software Repositories, {MSR} 2024}
       \field{title}{Thirty-Three Years of Mathematicians and Software Engineers: {A} Case Study of Domain Expertise and Participation in Proof Assistant Ecosystems}
       \field{year}{2024}
@@ -133,8 +132,8 @@
       \strng{namehash}{44132303db780573059aff3e35c0311d}
       \strng{fullhash}{d9dfcfc29bab613d941fe10e241418df}
       \strng{fullhashraw}{d9dfcfc29bab613d941fe10e241418df}
-      \strng{bibnamehash}{44132303db780573059aff3e35c0311d}
-      \strng{authorbibnamehash}{44132303db780573059aff3e35c0311d}
+      \strng{bibnamehash}{d9dfcfc29bab613d941fe10e241418df}
+      \strng{authorbibnamehash}{d9dfcfc29bab613d941fe10e241418df}
       \strng{authornamehash}{44132303db780573059aff3e35c0311d}
       \strng{authorfullhash}{d9dfcfc29bab613d941fe10e241418df}
       \strng{authorfullhashraw}{d9dfcfc29bab613d941fe10e241418df}
