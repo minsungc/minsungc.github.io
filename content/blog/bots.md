@@ -11,7 +11,7 @@ It's because they code for me.
 My code usually spends just as much time in my head as it does being written down on the computer.
 I find that thinking deeply about what I plan to write makes my mistakes stand out.
 An edge case that I need to cover, an optimization I didn't do, an abstraction I couldn't
-come up with -- all things I catch at "firing neurons to type my thougLet's hts" time.
+come up with -- all things I catch at "firing neurons to type my thoughts" time.
 And these mistakes help me be a better programmer.
 
 Indeed, one of the things that I learned early in my computer touching is that
@@ -51,3 +51,6 @@ Anyway, moral of the story is that, in the end, I am a programmer. And programmi
 funny text and then pressing a couple buttons and having the computer magically spit out one gorillion dollars.
 Programming is about communicating what you want to a computer, and understanding that ultimately it
 is your responsibility to communicate precisely and accurately. Then maybe, just maybe, I might stop feeling dumb.
+
+(disclaimer: I am acutely aware of the ecological, psychological, financial, societal, political and ethical problems
+surrounding AI and LLMs and the purpose of this blog post is strictly evaluating it as a tool.)
