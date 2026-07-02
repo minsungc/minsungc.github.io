@@ -146,6 +146,7 @@
       \field{title}{The Krein-von Neumann extension of a regular even order quasi-differential operator}
       \field{volume}{41}
       \field{year}{2021}
+      \true{nocite}
       \field{pages}{805\bibrangedash 841}
       \range{pages}{37}
       \verb{doi}

@@ -1,7 +1,7 @@
 baseURL = 'https://minsungc.github.io/'
 locale = 'en-us'
 
-title = 'Minsung World'
+title = "Minsung's World"
 theme = 'hugo-bearblog'
 
 # Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.

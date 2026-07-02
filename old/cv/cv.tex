@@ -39,8 +39,12 @@
 \begin{tabbing} % Enables tabbing
 \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
 \href{mailto:minsungc1@gmail.com}{\texttt{minsungc1@gmail.com}} \\ % Home phone
+\href{https://minsungc.github.io}{minsungc.github.io} \\
 \href{https://linkedin.com/in/minsung-c}{linkedin.com/in/minsung-c}
 \end{tabbing}}
+
+% \vspace{2pt}
+% \noindent Software engineer working on query languages, compilers, and database engines.
 
 \hrule
 
@@ -49,12 +53,12 @@
 %----------------------------------------------------------------------------------------
 
 \newcommand{\job}[7]{%
-{\setlength{\parskip}{0pt}%
+{\setlength{\parskip}{0.2pt}%
 \par\noindent\textbf{\textit{#6}}\hfill\textbf{#1 #2}\par
 \noindent\href{#5}{#3}\hfill\textit{#4}\par}
 \nopagebreak
-\vspace{-6pt}
-\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\setlength{\topsep}{0pt}\setlength{\parsep}{0pt}
+\vspace{-3pt}
+\begin{itemize}\setlength{\itemsep}{0.2pt}\setlength{\parskip}{0pt}\setlength{\topsep}{0pt}\setlength{\parsep}{0pt}
     #7
 \end{itemize}
 \vspace{0.3em}
@@ -66,11 +70,12 @@
 {May 2025 --}{Present}
 {RelationalAI, Logic Engine team}{Remote}
 {http://relational.ai}
-{Software Engineer}
+{Software Engineer, Compiler}
 {
-    \item Design and implement the imperative extension to RelationalAI's query language
+    \item Design and implement the procedural extension to RelationalAI's query language
     \begin{itemize}
-        \item Cut previously intractable enterprise queries to sub-hour runtimes
+        \item Scale adoption from internal algorithms to several enterprise workloads
+        \item Optimize previously intractable queries to sub-hour runtimes
     \end{itemize}
     \item Build the GQL-style graph pattern matching extension for the query language
     \item Maintain the database engine's Protocol Buffer-based entry point ($\sim$100k queries/day)
@@ -86,9 +91,12 @@
     \item Designed a language to express optimization problems under uncertainty~\cite{cho2025}
     \begin{itemize}
         \item Implemented a novel binary decision diagram algorithm to compute optimal values
-        \item Beat a state-of-the-art probabilistic programming language in optimization benchmarks
+        \item Outperformed a state-of-the-art probabilistic programming language by up to 10x
     \end{itemize}
     \item Co-led the first empirical study of online proof assistant communities~\cite{lincroft2024}
+    \begin{itemize}
+        \item Applied established developer lifecycle models to characterize contribution patterns
+    \end{itemize}
 }
 
 \job
@@ -97,19 +105,19 @@
 {http://relational.ai}
 {R\&D Intern}
 {
-    \item Built a reverse compiler for Datalog to surface query optimizations for easier debugging
-    \item Integrated GraphViz visualizations of query optimizations into the query language's profiler
+    \item Shipped a decompiler that lifts optimized Datalog back to source query
+    \item Integrated it into the production query profiler to automatically flag performance bottlenecks
 }
 
-\job
-{Jun 2021 --}{Jul 2021}
-{University of Tennessee}{Chattanooga, USA}
-{http://www.utc.edu}
-{REU Researcher}
-{
-    \item Published research in the theory of matrices in function spaces~\cite{cho2021krein}
-    \item Automated routine computation in Mathematica, saving weeks of manual effort
-}
+% \job
+% {Jun 2021 --}{Jul 2021}
+% {University of Tennessee}{Chattanooga, USA}
+% {http://www.utc.edu}
+% {REU Researcher}
+% {
+%     \item Published research in the theory of matrices in function spaces~\cite{cho2021krein}
+%     \item Automated routine computation in Mathematica, saving weeks of manual effort
+% }
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -138,25 +146,6 @@
 {Bachelor of Science, Mathematics and Philosophy}
 
 %----------------------------------------------------------------------------------------
-%	Publication Section
-%----------------------------------------------------------------------------------------
-\section{Publications}
-
-{\small
-\setlength{\bibitemsep}{1pt}
-\printbibliography[heading=none]}
-
-%----------------------------------------------------------------------------------------
-%	Awards Section
-%----------------------------------------------------------------------------------------
-
-\section{Awards and Recognition}
-
-\noindent First Place, ACM Student Research Competition at PLDI\hfill\textbf{2023}\par
-\noindent Scholarship Recipient, Programming Languages Mentoring Workshop (PLMW) at PLDI\hfill\textbf{2023}\par
-\noindent University and College Honors, Carnegie Mellon University\hfill\textbf{2022}\par
-
-%----------------------------------------------------------------------------------------
 %	Skills Section
 %----------------------------------------------------------------------------------------
 
@@ -164,7 +153,26 @@
 
 \begin{description}\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}\setlength{\topsep}{0pt}
     \item[Programming languages:] Julia, Python, Datalog, OCaml, Rust, Go, C/C++, Haskell, Standard ML
-    \item[Tools:] Unix, Git, Jira, Docker, Datadog, Observe, Snowflake
+    \item[Tools:] Unix, Git, Jira, Docker, Datadog, Observe, Snowflake, LLVM/MLIR
 \end{description}
+
+%----------------------------------------------------------------------------------------
+%	Awards Section
+%----------------------------------------------------------------------------------------
+
+\section{Awards and Recognition}
+
+\noindent First Place, ACM Student Research Competition at PLDI (top PL conference)\hfill\textbf{2023}\par
+\noindent Scholarship Recipient, Programming Languages Mentoring Workshop (PLMW) at PLDI\hfill\textbf{2023}\par
+\noindent University and College Honors, Carnegie Mellon University\hfill\textbf{2022}\par
+
+%----------------------------------------------------------------------------------------
+%	Publication Section
+%----------------------------------------------------------------------------------------
+\section{Publications}
+
+{\small
+\setlength{\bibitemsep}{1pt}
+\printbibliography[heading=none]}
 
 \end{document}
