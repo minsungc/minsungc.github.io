@@ -47,10 +47,8 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Proc. {ACM} Program. Lang.}
-      \field{number}{{OOPSLA1}}
+      \field{journaltitle}{Proc. {ACM} Program. Lang. ({OOPSLA})}
       \field{title}{Scaling Optimization over Uncertainty via Compilation}
-      \field{volume}{9}
       \field{year}{2025}
       \verb{doi}
       \verb 10.1145/3720500
@@ -103,54 +101,6 @@
       \range{pages}{13}
       \verb{doi}
       \verb 10.1145/3643991.3644908
-      \endverb
-    \endentry
-    \entry{cho2021krein}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=fb67eebe478b7906b869604aceb17dc3}{%
-           family={\myname},
-           familyi={\bibinitperiod}}}%
-        {{hash=44037c45ccc599ecccc8eae232ab1b88}{%
-           family={Hoisington},
-           familyi={H\bibinitperiod},
-           given={Seth},
-           giveni={S\bibinitperiod}}}%
-        {{hash=d17cc34f3acb587b582822e93967e32f}{%
-           family={Nichols},
-           familyi={N\bibinitperiod},
-           given={Roger},
-           giveni={R\bibinitperiod}}}%
-        {{hash=87c86c7233f2e77d8069f188f362c536}{%
-           family={Udall},
-           familyi={U\bibinitperiod},
-           given={Brian},
-           giveni={B\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AGH University Press}%
-      }
-      \strng{namehash}{44132303db780573059aff3e35c0311d}
-      \strng{fullhash}{d9dfcfc29bab613d941fe10e241418df}
-      \strng{fullhashraw}{d9dfcfc29bab613d941fe10e241418df}
-      \strng{bibnamehash}{d9dfcfc29bab613d941fe10e241418df}
-      \strng{authorbibnamehash}{d9dfcfc29bab613d941fe10e241418df}
-      \strng{authornamehash}{44132303db780573059aff3e35c0311d}
-      \strng{authorfullhash}{d9dfcfc29bab613d941fe10e241418df}
-      \strng{authorfullhashraw}{d9dfcfc29bab613d941fe10e241418df}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Opuscula Mathematica}
-      \field{number}{6}
-      \field{title}{The Krein-von Neumann extension of a regular even order quasi-differential operator}
-      \field{volume}{41}
-      \field{year}{2021}
-      \true{nocite}
-      \field{pages}{805\bibrangedash 841}
-      \range{pages}{37}
-      \verb{doi}
-      \verb 10.7494/OpMath.2021.41.6.805
       \endverb
     \endentry
   \enddatalist

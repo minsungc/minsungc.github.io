@@ -10,19 +10,13 @@
 
 \usepackage[hmargin=20mm, top=14mm, bottom=12mm]{geometry} % US letter; set margins
 
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 
 \usepackage{titlesec}
 \titlespacing*{\section}{0pt}{*1.0}{*1.3}
 
 \setcounter{secnumdepth}{0} % Suppress section numbering
 
-\newcommand{\tabbedblock}[1]{
-\begin{tabbing}
-\hspace{2.5cm} \= \hspace{4cm} \= \kill
-#1
-\end{tabbing}
-}
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -38,14 +32,15 @@
 \parbox{0.5\textwidth}{ % Second block
 \begin{tabbing} % Enables tabbing
 \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
-\href{mailto:minsungc1@gmail.com}{\texttt{minsungc1@gmail.com}} \\ % Home phone
-\href{https://minsungc.github.io}{minsungc.github.io} \\
-\href{https://linkedin.com/in/minsung-c}{linkedin.com/in/minsung-c}
+\href{mailto:minsungc1@gmail.com}{\texttt{minsungc1@gmail.com}} \\
+\href{https://minsungc.github.io}{\texttt{minsungc.github.io}} \\
+\href{https://linkedin.com/in/minsung-c}{\texttt{linkedin.com/in/minsung-c}}
 \end{tabbing}}
 
-% \vspace{2pt}
-% \noindent Software engineer working on query languages, compilers, and database engines.
+\vspace{2pt}
+\noindent Software engineer working on compilers, database engines, and distributed systems.
 
+\vspace{3pt}
 \hrule
 
 %----------------------------------------------------------------------------------------
@@ -61,7 +56,7 @@
 \begin{itemize}\setlength{\itemsep}{0.2pt}\setlength{\parskip}{0pt}\setlength{\topsep}{0pt}\setlength{\parsep}{0pt}
     #7
 \end{itemize}
-\vspace{0.3em}
+\vspace{0.5em}
 }
 
 \section{Employment}
@@ -74,12 +69,16 @@
 {
     \item Design and implement the procedural extension to RelationalAI's query language
     \begin{itemize}
-        \item Scale adoption from internal algorithms to several enterprise workloads
-        \item Optimize previously intractable queries to sub-hour runtimes
+        \item Scale adoption from internal algorithms to several enterprise workloads (15k queries/day)
+        \item Cut day-long query runtimes to under an hour
     \end{itemize}
-    \item Build the GQL-style graph pattern matching extension for the query language
-    \item Maintain the database engine's Protocol Buffer-based entry point ($\sim$100k queries/day)
-    \item Develop an event-based user-facing logging tool to diagnose slow queries
+    \item Lead migration of legacy customer code ($>$300k LoC) to our Python library, partnering with GTM
+    \begin{itemize}
+        \item Build a compiler toolchain to incrementally transpile legacy code
+        \item Accelerate benchmark workloads up to 30\% by eliminating costly legacy compiler passes
+    \end{itemize}
+    \item Ship GQL-style graph pattern matching as sole compiler engineer with the Symbolic AI team
+    \item Maintain the database engine's Protocol Buffer-based entry point (100k+ queries/day)
 }
 
 \job
@@ -94,9 +93,6 @@
         \item Outperformed a state-of-the-art probabilistic programming language by up to 10x
     \end{itemize}
     \item Co-led the first empirical study of online proof assistant communities~\cite{lincroft2024}
-    \begin{itemize}
-        \item Applied established developer lifecycle models to characterize contribution patterns
-    \end{itemize}
 }
 
 \job
@@ -105,19 +101,9 @@
 {http://relational.ai}
 {R\&D Intern}
 {
-    \item Shipped a decompiler that lifts optimized Datalog back to source query
+    \item Shipped a decompiler that lifts optimized Datalog back to the source query
     \item Integrated it into the production query profiler to automatically flag performance bottlenecks
 }
-
-% \job
-% {Jun 2021 --}{Jul 2021}
-% {University of Tennessee}{Chattanooga, USA}
-% {http://www.utc.edu}
-% {REU Researcher}
-% {
-%     \item Published research in the theory of matrices in function spaces~\cite{cho2021krein}
-%     \item Automated routine computation in Mathematica, saving weeks of manual effort
-% }
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -134,13 +120,13 @@
 \section{Education}
 
 \education
-{Sep 2022 -}{May 2025}
+{Sep 2022 --}{May 2025}
 {Northeastern University}{Boston, USA}
 {http://www.northeastern.edu}
 {Master of Science, Computer Science}
 
 \education
-{Aug 2018 -}{May 2022}
+{Aug 2018 --}{May 2022}
 {Carnegie Mellon University}{Pittsburgh, USA}
 {http://www.cmu.edu}
 {Bachelor of Science, Mathematics and Philosophy}
@@ -153,7 +139,7 @@
 
 \begin{description}\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}\setlength{\topsep}{0pt}
     \item[Programming languages:] Julia, Python, Datalog, OCaml, Rust, Go, C/C++, Haskell, Standard ML
-    \item[Tools:] Unix, Git, Jira, Docker, Datadog, Observe, Snowflake, LLVM/MLIR
+    \item[Tools:] Unix, Git, Docker, Datadog, Observe, Snowflake, LLVM/MLIR
 \end{description}
 
 %----------------------------------------------------------------------------------------
