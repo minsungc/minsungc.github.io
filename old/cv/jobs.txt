@@ -1,0 +1,30 @@
+Software Engineer, Compiler
+RelationalAI, Logic Engine team — Remote
+May 2025 – Present
+
+- Design and implement the procedural extension to RelationalAI's query language
+  - Scale adoption from internal algorithms to several enterprise workloads (15k queries/day)
+  - Unlock previously inexpressible customer algorithms, which now run in under an hour
+- Lead migration of legacy customer code (>300k LoC) to our Python library
+  - Build a compiler toolchain to incrementally transpile legacy code
+  - Accelerate benchmark workloads up to 30% by eliminating costly legacy compiler passes
+- Deliver GQL-style graph pattern matching as sole compiler engineer with the Symbolic AI team
+- Maintain the database engine's Protocol Buffer-based entry point (100k+ queries/day)
+
+
+Graduate Researcher
+Northeastern University, Programming Research Lab — Boston, USA
+Sep 2022 – Apr 2025
+
+- Designed a language to express optimization problems under uncertainty
+  - Implemented a novel binary decision diagram algorithm to compute optimal values
+  - Outperformed a state-of-the-art probabilistic programming language by up to 10x
+- Co-led the first empirical study of online proof assistant communities
+
+
+R&D Intern
+RelationalAI, Logic Engine team — Remote
+May 2024 – Dec 2024
+
+- Shipped a decompiler that lifts optimized Datalog back to the source query
+- Integrated it into the production query profiler to automatically flag performance bottlenecks
